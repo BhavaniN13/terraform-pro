@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "terraAzure" {
     location = "East US"
 }
 resource "azurerm_storage_account" "terraStorage" {
-  name                     = "casestudy1storage"    # must be globally unique
+  name                     = "casestudy1storage13"   
   resource_group_name      = azurerm_resource_group.terraAzure.name
   location                 = azurerm_resource_group.terraAzure.location
   account_tier             = "Standard"
